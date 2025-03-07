@@ -1,0 +1,12 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap';
+@import 'primeicons/primeicons.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
