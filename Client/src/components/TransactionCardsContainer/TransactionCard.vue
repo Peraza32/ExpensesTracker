@@ -11,7 +11,7 @@ const formatDate = (date) => {
 </script>
 
 <template>
-    <div class="grid grid-cols-5 w-full p-4 text-slate-700 border-b-2 border-slate-300">
+    <div class="grid grid-cols-5 w-full p-4 text-slate-700 border-b-2 border-isabelline hover:cursor-pointer hover:bg-isabelline">
         <p v-if="transaction.type === 'expense'" class="font-bold my-auto text-rose-500">${{ transaction.amount }}</p>
         <p v-if="transaction.type === 'income'"  class="font-bold my-auto text-emerald-500">${{ transaction.amount }}</p>
 
@@ -24,9 +24,9 @@ const formatDate = (date) => {
         
         <p class="my-auto">{{ transaction.note }}</p>
         
-        <div class="w-full flex justify-end">
-            <Button icon="pi pi-pencil" class="p-button-rounded p-button-text p-button-sm"></Button>
-            <Button icon="pi pi-trash" class="p-button-rounded p-button-text p-button-sm"></Button>
+        <div class="w-full flex justify-end gap-2">
+            <Button icon="pi pi-pencil" severity="info" class="p-button p-button-sm"></Button>
+            <Button icon="pi pi-trash"  severity="danger" class="p-button p-button-sm"></Button>
         </div>
     </div>
 </template>

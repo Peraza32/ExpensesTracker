@@ -6,7 +6,7 @@ import transactions from '../data/transactions';
 </script>
 
 <template>
-    <div class="w-screen h-full p-4 grid grid-cols-2 gap-4">
+    <div class="w-screen h-full p-4 flex flex-col justify-center items-center gap-4 bg-isabelline">
         <!-- <TransactionForm /> -->
         <TransactionCardsContainer :transactions="transactions"/>        
     </div>
