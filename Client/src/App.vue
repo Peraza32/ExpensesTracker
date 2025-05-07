@@ -1,27 +1,31 @@
 <script setup>
 import AppLayout from './layouts/AppLayout.vue'
+import Card from './components/Card.vue';
+import Dashboard from './components/Dashboard/Dashboard.vue';
 </script>
 
 <template>
 <AppLayout>
-  <div class="bg-white w-11/12 h-fit rounded-sm p-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2">
-    <div class="flex flex-wrap gap-2">
-      <div v-for="n in 4" class="h-64 bg-amber-500 rounded-sm grow animated-box hover:bg-amber-700"></div>
-    </div>
-    <div class="flex flex-wrap gap-2">
-      <div v-for="n in 3" class="h-64 bg-amber-500 rounded-sm grow animated-box hover:bg-amber-700"></div>
-    </div>
+  <!-- Dashboard -->
+  <div class="w-full p-4 py-6" style="height: calc(100vh - 4rem);">
+    <Dashboard/>
   </div>
+
+  <!-- Sección de tarjetas de información -->
+  <!-- <section class="w-full h-11/12 p-4 gap-4 flex flex-col">
+    <div class="w-full flex flex-wrap items-center justify-center gap-4">
+      <Card color="sky"/>
+      <Card color="rose"/>
+      <Card color="amber"/>
+      <Card color="emerald"/>
+    </div>
+  </section> -->
 </AppLayout>
 </template>
 
 <style scoped>
-:hover.animated-box {
-  flex-grow: 5;
-  transition: all 0.5s ease-in-out;
-}
-
-.animated-box {
-  flex: 1 0 4rem
+.test {
+  background: #00A6F4;
+  background: linear-gradient(90deg, rgba(0, 166, 244, 1) 0%, rgba(255, 32, 86, 1) 100%);
 }
 </style>
