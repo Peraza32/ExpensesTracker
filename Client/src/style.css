@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+:hover.gradient-component {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: all 0.7s ease-in-out;
+}
+
+.gradient-component {
+    background: linear-gradient(135deg, rgba(20, 71, 230, 1) 0%, rgba(60, 67, 179, 1) 25%, rgba(159, 57, 54, 1) 75%, rgba(202, 53, 0, 1) 100%);
+}
